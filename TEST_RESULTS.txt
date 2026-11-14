@@ -1,0 +1,16 @@
+NavBot 3D Python AI Edition v4.0
+================================
+Verified in model environment:
+- Python pytest suite: 43 passed (4 algorithms, simulation, API)
+- FastAPI TestClient state, command, benchmark, history endpoints: passed
+- Node.js syntax checks for frontend JS modules: passed
+
+Not verified in model environment:
+- npm install: timed out due to dependency download/environment
+- npm run build: Vite dependencies unavailable in the environment
+- Full 3D visual inspection in Chromium: requires installed Node dependencies
+
+Run on your machine:
+  cd backend && py -m pytest -q
+  cd frontend && npm install && npm run build
+  START_WINDOWS.bat
